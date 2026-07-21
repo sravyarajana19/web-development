@@ -1,0 +1,14 @@
+basic structure of html 
+declaration --  it tell the type and version(5) of doc to the browser
+<!doctype html>
+
+html --  it acts as a root elements
+<html> 
+    head is used to define title, meta data  and third party 
+    <head>
+        <title>html page </title>
+    </head>
+    <body>
+        where we will write the actual ocontent of the page
+    </body>
+ </html>
