@@ -1,0 +1,157 @@
+<!-- display behaviour
+ 1. block level elements -- are the elements whicb occupies total spqace and always start on a new line .
+ ex:headings ,paragraphs, list, table, forms, div
+
+ 2. inline elelments-- are the elements which poccupies neccessery space and it doesnt starts on a new line.
+ ex: achor tag, image tag, input,span
+
+
+ div and span: 
+ > division elements--which is used to group the sessions for applying styles.
+ > span tag is used to group the text for applying styles.
+
+
+semantics -- are used to convey the meaning about the content to the browser and developer. 
+ 
+
+ forms: are used to collect the data from the user nd allowing users to submit data to the server.
+ ex: signup, login, registrations, contact
+
+ forms are defined with form tags
+ form fieldsx are defined with input tags
+ <form> --------
+    ----------
+---------
+ </form>
+ attributes:
+ 1.type -- it controls the form field behaviour
+ type="text"
+ type="email"
+ type=""
+
+ 2.placeholder--it convey the meaning about the form field
+
+ 3.for and id -- it is used to form the relation between the input and label
+
+ 4.name -- it will act as a key and carry 
+
+ 5.value--prints the predefined values
+
+ application:
+ 
+ -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>text</h1> <h2>text 2</h2>
+    <a href="view">view</a>
+    <a href="view">view</a>
+    <hr>
+
+
+
+    <br>
+    <form action="" align="center">
+        <label for="inp">enter your name</label>
+        <input type="text" placeholder="enter name" required>
+        <br>
+
+        <label for="email">enter your email</label>
+        <input type="text" name="username" placeholder="enter email" required>
+
+        <br>
+        <label for="email">enter your phone num</label>
+         <input type="number" placeholder="enter phone number" required>
+         <br>
+
+         <label for=""> book ur slot</label>
+         <input type="datetime-local">
+         <br>
+
+         <label for="">upload ur reports</label>
+         <input type="file" name="" id="">
+         <br>
+
+         <label for="">enter ur password</label>
+         <input type="password" name="" id="">
+         <br>
+         <input type="date" name="" id="">
+         <input type="month" name="" id="">
+         <input type="week" name="" id="">
+         <input type="search" name="" id="">
+         <input type="range" name="" id="">
+
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+    <hr>
+
+
+    <form action="" method="post">  
+        <!-- formsubmitco -- is a website there u will get ur form linke just past it in action to get directly the filled data to u -->
+        select your tech stack  <br>
+
+
+        <input type="radio" name="SKILLSET" id="" value="python">
+        <label for="">python fullstack</label>
+        <br>
+
+        <input type="radio" name="SKILLSET" id="" value="java">
+        <label for="">java fullstack</label>
+        <br>
+
+        <input type="radio" name="SKILLSET" id="" value="mern">
+        <label for="">mern fullstack</label>
+        <br>
+        <button type="submit">submit</button>
+        <hr>
+
+
+
+
+        <input type="checkbox" name="skill" id="html" value="html">
+        <label for="html">html</label>
+        <br>
+
+        <input type="checkbox" name="skill" id="css" value="css">
+        <label for="css">css</label>
+        <br>
+
+        <input type="checkbox" name="skill" id="js" value="js">
+        <label for="js">js</label>
+        <br>
+        <hr>
+
+        <label for="">choose ur education</label>
+        <select name="" id="">
+            <option value="btech">btech</option>
+            <option value="degree">degree</option>
+        </select>
+        <br>
+
+        <textarea name="" id="" cols="30" rows="10"> When you click "I agree" on a website, you sign this contract legally “establishing a framework of expectations, limitations, and responsibilities that both parties must adhere to” (Icertis). Always read them to know your rights!</textarea>
+
+        <br>
+        <input type="checkbox" required>
+        <label for="">i agree with the terms and conditions</label>
+
+
+        <button type="submit">submit</button>
+
+
+    </form>
+    <hr>
+
+    
+
+    
+</body>
+</html>
+
+
