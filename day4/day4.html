@@ -1,0 +1,152 @@
+<!-- 
+    css- cascading style sheets
+    What is css?
+    It  is used to describes the presentation of a html document
+    it deals with colors,text,fonts,backgrounds,animation,layouts and media quries 
+    
+How to insert css
+1)inline css
+styyles are add to the html element itself by using style attribute
+<h1 style='color:red;' >inline content</h1>
+2)internal css
+styles are added to the document using style tag
+<style></style>
+selectors
+it is used to target the html elements for applying styles
+syntax:
+selector{
+declaration
+property:value;
+}
+h2{
+color:green;
+}
+3) external css
+ external css styles are defined in external file that has.css extension
+
+ high specificity -- high precedence
+ inline having high specificity
+ based on how we define -- preffered internal then external
+
+ types of selectors:
+ 1. simple selectors
+ a) element selector or tagname selector
+ styles will be applied based on the element
+ h1{
+ color:red
+ }
+
+ b) class selector
+ it it denoted with .class name
+ it is used to apply styles to the multiple elements
+ multiple names in class name
+ .title{
+ color:green;
+ }
+ <h1 style="color: red;">inline content</h1>
+    <h2>internal content</h2>
+    <h3>external content</h3>
+
+    c)id selector
+    it is denoted by id name 
+    it is used to apply styles
+    1.combinators 
+    2.pseudo class
+    3.attributes
+
+    specificity: -- 
+    1) id having a high specificity 
+    2)class having high
+    3) tag name
+
+    box model:--it describes the presentation of an element
+    it contains four components
+
+    1.content
+    width
+    height
+    2)padding
+    it is space around the content
+    pading:20px;
+    pading : 10px top 20pxright 30pxbottom 40pxleft
+    pading : 10px top 20pxright/left 30pxbottom
+    pading : 10px top/bottom 20pxright/left
+
+    3)border:-- it is line around the padding
+    border:
+    thickness 1px/2px
+    style: solid,dotted , dashed,double,inset,outset,ridge,groove,none
+    color:black
+    border-radius:20px;
+
+    margin:-- it is space 
+
+
+
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        h2{
+            color: green;
+        }
+        .title{
+            color: green;
+            background-color: cornsilk;
+            width:20%;
+            height: 200px;
+            padding: 50px;
+            border: 10px solid black;
+            border-radius: 20px;
+            margin: 20px;
+            margin: 20px 30px;
+            background-image: url("https://as2.ftcdn.net/v2/jpg/07/45/80/85/1000_F_745808574_GsxEORdXpmwWt7Zqe6CXf1FXRWBXeC1C.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: contain;
+            background-size: 100% 100%;
+        }
+        #el1{
+            color: deeppink;
+        }
+        div{
+            background-color: darkgoldenrod;
+            width: 75%;
+            height: 30px;
+            padding: 10px;
+            margin: 20px;
+
+        }
+        span{
+            background-color: dimgrey;
+            width: 200px;
+            height: 300px;
+            padding: 20px;
+            margin: 30px;
+            
+
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>block level <span>inline elements</span>elements</div>
+    <h1>inline content</h1>
+    <h2 class="title" id="el1">internal content</h2>
+    <h2 class="title" id="el1">internal content</h2>
+
+    <h3 class="title title2">external content</h3>
+    <h3 class="title title2">external content</h3>
+    
+    <p style="color: cornflowerblue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In rerum neque corporis, consectetur sequi non accusantium eos impedit vel perferendis.</p>
+    
+</body>
+</html>
