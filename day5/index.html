@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Combinator-it is used to apply styles based on  a relation
+        children selector-it is used to apply styles
+        header>button>a
+        descentet 
+        header button-
+        univerrsal selector -it is used to apply every element
+        boiler plate code*{
+        margin:0;
+        padding:0;
+        box-sizing:border}
+
+        text properties::aftertext - align:center right left;
+        text-shadow: hoffset voffset blurradius color
+        text: shadow 1px 1px 5px black;
+
+        font properties(fontawsome cdl)
+        1)font-family : cursive;
+        2)font-size:1.2rem;
+        /* font-family: "Playwrite NZ Guides", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Playwrite NZ Basic", cursive;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal; */
+
+        */
+        {
+        font-family:cursive;
+        margin:0;
+          padding:0;
+          box-sizing:border-box;
+        }
+        header{
+            position:sticky;
+            top: 0;
+            z-index: 10;
+            
+        }
+        
+         header,footer{
+            background:rgb(4, 4, 121);
+            text-align: center;
+            padding:30px;
+
+        }
+        header>button{
+            color: white;
+            background-color: blue;
+            padding:20px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .s1{
+            /* background:linear-gradient(red,blue) */
+            background:linear-gradient(rgb(0,0,0,0.65),rgb(0,0,0,0.65)),url("https://as2.ftcdn.net/v2/jpg/02/83/46/33/1000_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg");
+            height: 400px;
+            background-size: 100% 100%;
+            color: aliceblue;
+            padding: 150px 20px;
+        }
+        .s2{
+            text-align: center;
+            padding: 100px;
+        }
+        .box{
+            box-shadow: 0px 0px 4px 0px black;
+            width: 120px;
+            height:100px;
+            color: aliceblue;
+            display:inline-block;
+            margin: 10px;
+            padding: 30px;
+            border-radius: 10px;
+
+        }
+        .h1{
+            text-shadow: 0px 10px 0px blue;
+        }
+        .s3{
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 100px;
+
+        }
+        .card{
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 20%;
+            background-color: white;
+            border: 2px solid blue;
+            border-radius: 10px;
+            height: 200px;
+            box-shadow: 0px 0px 4px 0px black;
+            transition: all 1s;
+
+        }
+        .card:hover{
+            transform:translate(0px, -20px)
+        }
+        .s4{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            
+            
+        }
+        .box1{
+            padding: 10px;
+            background-color: rgb(27, 95, 155);
+            margin: 10px;
+            font-weight: 700;
+            
+        }
+        .box{
+            margin-left: 0px;
+            transition: all 1s;
+            
+
+        }
+        .box:hover{
+            background-color: darkmagenta;
+            transform: translate(0px, 40px);
+            transform:rotate(20deg);
+            transform: scale(0.5);
+            
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <button>Home</button>
+        <button>About</button>
+        <button>Services</button>
+        <button>Contact</button>
+    </header>
+
+    <section class="s1" align="center">
+        <h1>Learn web dev through projects</h1>
+        <p>This project demonstriate css color,background,flexbox,box model, typography, shadows, responsive design in one modren webpage</p>
+    </section>
+
+    <section class="s2"
+    <h1>CSS colors</h1>
+    <div class="parent">
+        <div class="box" style="background-color: rgb(233, 135, 135);">content</div>
+        <div class="box" style="background-color: blueviolet;">content</div>
+        <div class="box" style="background-color: cadetblue;">content</div>
+        <div class="box" style="background-color: deeppink;">content</div>
+    </div>
+    </section>
+
+    <section class="s3">
+        <h1>CSS Box Model</h1>
+        <div class="parent">
+            <div class="card">
+                <h3>card one</h3>
+                <p> padding creates space inside the element. border surrounds the content . margin creates space outside the element.</p>
+            </div>
+            <div class="card">
+                <h3>card one</h3>
+                <p> padding creates space inside the element. border surrounds the content . margin creates space outside the element.</p>
+            </div>
+            <div class="card">
+                <h3>card one</h3>
+                <p> padding creates space inside the element. border surrounds the content . margin creates space outside the element.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s4">
+        <h1>CSS Fonts</h1>
+        <div>
+            <div class="box1">Light Font Weight(300)</div>
+            <div class="box1">Normal Font Weight(400)</div>
+            <div class="box1">Bold Font Weight(700)</div>
+        </div>
+
+        <p>This paragraph demonstrateates font-family, font-size, letter-spacing, line-height, and font-weight<br> properties</p>
+
+
+        
+    </section>
+
+    <br>
+
+    <footer style="color:white;">© 2026 CSS Learning Project | Designed for Frontend Practice</footer>
+</body>
+</html>
