@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    javascrip is the highlevel intrepreted programming language that is used to create dynamic nature to the website
+    
+    it was introduced in 1995 by brendan eich
+    JavaScript was standardized as ECMAScript (ES).
+    ES1 (1997)
+    ES2
+    ES3
+    ES5 (2009)
+    ES6 / ES2015 (major update with let, const, arrow functions, classes, etc.)
+
+    how to insert javascripy?
+    1)inline -- <button onclick='console.log("inline js")'>click me</button>
+    2)internal -- <script>console.log('internal js')</script>
+    3)external -- demo.js console.log('external js') --- <script src="demo.js"></script>
+
+    <button onclick='console.log("inline js")'>click me</button>
+    <script>
+    console.log('internal js')
+    </script>
+    <script src="demo.js"></script>
+    
+    > varaibles --  is a container which is used to store the values a data can be anytype.
+    operators.
+    variables are defined with var, let and const keyword followed by variablwe name followed by value.
+
+    var a = 10;
+    let b=20;
+    const c=30;
+    console.log(a,b,c) -- should write inside <script></script>
+
+    variable terms-- 
+    variable declaration;
+    var a;
+    console.log(a)-- o/p -- undefined 
+
+    assignment
+    var b;
+    b=20;
+
+    initialization
+    var c=30;
+
+   referenceerror -- console.log(d) -- because d is not defined.
+
+   hoisting -- hoisting is a behaviour of javascript where the decleration of a variable and functions are moved to top even before the execution
+    console.log(z)
+    var z -- undefined 
+
+    console.log(z)
+    var z=10 -- undefine becoz -- only declartion will move 
+
+
+    > datatypes --  1) primitive datatypes .. which stores the single values...which are immutable.. which stores in stack
+
+    a) strings --  it is a collection of  characters that are enclosed in '' or "" or `` 
+    strings are immmutable
+    var s='hello world'
+    s[0] = 'z'
+    console.log(s) -- o/p -- canot change the string 
+
+
+    b)numbers -- 
+    var n=10
+    var m=-1
+    var num=10.2
+    console.log(n,m,num)
+
+    c)boolean -- either true or false
+    var isadmin=true;
+    var isadmin=false;
+    var membership=true;
+    var membership=false;
+    var isactive=true;
+    var isactive=false;
+    console.log(isadmin)
+    console.log(membership)
+    console.log(isactive)
+
+    d) undefined -- 
+    var a 
+    console.log(a)
+
+    e) null -- it is a intentional absence of a value 
+    var id = null;
+    var empname = null;
+    console.log(id+10) -- if id is not defined result will be nan (not a number)
+
+
+    2)non primitive datatypes .. which stores multiple values..which are mutable.. which stores in heap
+    a)array -- it is used to store multiple values in a single variable .
+    it stores both homogenoues and hetrogeneous
+    it can be accessed via number index.
+
+    var arr=[1,2,'hello']
+    console.log(arr[2]) -- hello
+    arr[2]='hello world'
+
+    b)object--
+    let data=[2,25,3]
+    let obj={
+        batchno:2,
+        batchcount:25,
+        batchpy:3,
+    }
+    obj.batchcount=30;
+    console.log(obj)
+    console.log(obj.batchcount)
+    console.log(obj['batchpy'])
+
+    c) functions --
+    function.greet(){
+    console.log('hello world')}
+    greet()
+
+    d)types of the data:--- console.log(typeof(a))
+     var a =10;
+    console.log(typeof(a))#number
+
+    var a ='hello';
+    console.log(typeof(a)) #string
+
+    var a = 10.2;
+    console.log(typeof(a))#num
+
+    var a = true;
+    console.log(typeof(a))#bool
+
+    var a = [1,2,3]
+    console.log(typeof(a))#obj
+
+    var a = {3 : 4}
+    console.log(typeof(a))#obj
+
+    var a =(1,2)
+    console.log(typeof(a))#num
+
+    hwo to take input from the user 
+    var marks = prompt('enter your marks')
+    console.log(marks)
+    var grade=''
+    if (marks>80){
+    grade = 'A'
+    }else if (marks>35){
+    grade='B'
+    }
+    console.log(grade)
+
+    dom -- document object model
+    it is used to control the 
+
+     var marks = prompt('enter your marks')
+    console.log(marks)
+    var grade=''
+    if (marks>80){
+    grade = 'A'
+    }else if (marks>35){
+    grade='B'
+    }else {
+    grade='F'
+    }
+    let container = document.getElementById('container')
+    container.innerHTML=`your grade is <h1>${grade}</h1>`
+    console.log(grade)
+
+
+    conditional stmt
+    loops
+    asynchronous
+    call back promises-->
+</head>
+<body>
+    <div id="container"></div>
+   <script>
+    // var a ;
+    // console.log(a)
+
+     
+    // var b;
+    // b=20;
+    // console.log(b)
+
+    // var c=30;
+    // console.log(c)
+
+    // console.log(d)
+
+    // console.log(z)
+    // var z=10 
+
+    // var s='hello world'
+    // s = 'z'
+
+
+    // console.log(s[0])
+    // s[0] = 'z'
+    // console.log(s)
+
+    //  var n=10
+    // var m=-1
+    // var num=10.2
+    // console.log(n,m,num)
+
+    // var isadmin=true;
+    // var isadmin=false;
+    // var membership=true;
+    // var membership=false;
+    // var isactive=true;
+    // var isactive=false;
+    // console.log(isadmin)
+    // console.log(membership)
+    // console.log(isactive)
+
+    // var id = null;
+    // var empname = null;
+    // console.log(id+10)
+
+    // var arr=[1,2,'hello']
+    //  arr[2]='hello world'
+    // console.log(arr[2])
+   
+    // let data=[2,25,3]
+    // let obj={
+    //     batchno:2,
+    //     batchcount:25,
+    //     batchpy:3,
+    // }
+    // obj.batchcount=30;
+    // console.log(obj)
+    // console.log(obj.batchcount)
+    // console.log(obj['batchpy'])
+
+
+    // var a =10;
+    // console.log(typeof(a))
+
+    // var a ='hello';
+    // console.log(typeof(a))
+
+    // var a = 10.2;
+    // console.log(typeof(a))
+
+    // var a = true;
+    // console.log(typeof(a))
+
+    // var a = [1,2,3]
+    // console.log(typeof(a))
+
+    // var a = {3 , 4}
+    // console.log(typeof(a))
+
+    // var a =(1,2)
+    // console.log(typeof(a))
+
+    //  var a =('hello','world')
+    // console.log(typeof(a))
+
+    var marks = prompt('enter your marks')
+    console.log(marks)
+    var grade=''
+    if (marks>80){
+    grade = 'A'
+    }else if (marks>35){
+    grade='B'
+    }else {
+    grade='F'
+    }
+    let container = document.getElementById('container')
+    container.innerHTML=`<h1>your grade is ${grade}</h1>`
+    console.log(grade)
+
+   </script>
+    
+</body>
+</html>
