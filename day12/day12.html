@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+  </head>
+  <!-- 
+    conditional stmt
+    loops
+    asynchronous
+    call back promises
+    -----------------------------------
+> loops-- 
+    types of loops
+    for loop-counter loop - when we know the iterations
+    
+    for(starting point,endpoint,medium){
+    //memories
+    }
+    
+    for(initialization; condition; updation){
+    //block of code
+    }
+    
+    for(let i = 1; i<=10;i++){
+    console.log(i)
+    }
+
+    -------------------------------------
+> while loops -- even controlled loop -- when the iterations are not known
+    
+    while(true){
+    console.log('hello')}
+    
+     while(true){
+    let inp = prompt('eter item')
+    console.log(inp)
+    if(inp=='done'){
+        console.log('order completed')
+        break
+    }
+     
+ }
+    
+ ---------------------
+ > do - while --
+ let i=1
+  do{
+ console.log(i)
+ i++
+ }while(i%2==0)
+ ---------------------------------
+ 
+ > for in -- it is used to iterate the objects arrays and strings
+ -- it will get the keys (indexs)
+
+ let arr=['html','css','js']
+  
+ for(let i in arr){
+ console.log(i)//index
+ console.log(arr[i])//values
+ }
+
+ let obj={name:'john',age:22}
+ for(let i in obj){
+ console.log(i)
+ console.log(obj[i])
+ }
+
+let str = 'hello world'
+for (let i in str){
+console.log(i)
+console.log(str[i])
+}
+---------------------------
+for of -- it is used to get the 
+
+
+let arr=['html','css','js']
+  
+ for(let i of arr){
+ console.log(i)//index
+ console.log(arr[i])//values
+ }
+
+
+let str = 'hello world'
+for (let i of str){
+console.log(i)
+console.log(str[i])
+}
+
+---------------------
+
+> continue -- use in filters ---skip the current iteration 
+
+let data=[{
+productid:86342,status:'expired'},
+productid:8642,status:'not expired'},
+productid:8342,status:'expired'},
+productid:8632,status:'not expired'},
+productid:8634,status:'expired'},
+productid:16342,status:'not expired'}
+]
+for (let i in data){
+console.log(i)
+}
+
+
+let data=[{
+productid:86342,status:'expired'},
+productid:8642,status:'not expired'},
+productid:8342,status:'expired'},
+productid:8632,status:'not expired'},
+productid:8634,status:'expired'},
+productid:16342,status:'not expired'}
+]
+for (let i in data){
+if(i.status == 'expired'){
+continue
+}
+console.log(i)
+
+}
+------------------------------------
+
+>> break -- it is used to terminate the block of code when interpreter touches the break.
+
+let password='1234'
+while (true){
+let i=0
+let inp=prompt('enter ur password:')
+if(inp='1234')
+console.log('welcome to banking')
+}
+i++
+if(i==3){
+console.log('card is blocke')
+break
+}
+
+---------------------------------
+> functions -- functions are block of reuasble code that is used to perform a particular action when something invokes it
+
+functions are defined with  keyword followed by function name followed by () may include parameters followed by a block of code
+
+
+//function definition or declaration
+
+function greet(){
+console.log('hello')
+}
+
+//function calling or invoking
+
+greet()
+
+points in functions:
+1)function name stores function defination
+2)loggin of the function name  will give you the returnd value
+3)statments after return will not be executed 
+4)named functions can only be hoisted
+
+return :
+it is used to store the val of a function
+it is used to terminate the function block
+
+
+let students=[
+{name:'john',marks:80},
+{name:'janu',marks:50},
+{name:'josh',marks:30},
+{name:'jessy',marks:60},
+{name:'joe',marks:90}
+]
+for (i of students){
+grade =''
+console.log(i)
+if(i.marks >70){
+grade='A'}
+else if(i.marks>50)
+grade='B'
+}else {
+grade='F'
+}
+console.log(grade)
+let output=
+
+}
+
+
+
+
+ -->
+
+  <body>
+    <div id="container"></div>
+    <script>
+
+
+      let students=[
+      {name:'john',marks:80},
+      {name:'janu',marks:50},
+      {name:'josh',marks:30},
+      {name:'jessy',marks:60},
+      {name:'joe',marks:90}
+      ]
+      for (i of students){
+      grade =''
+      if(i.marks >70){
+      grade='A'
+    }else if(i.marks>50){
+      grade='B'
+      }else {
+      grade='F'
+      }
+      let container = document.getElementById('container')
+
+      let output=`
+      <div class='card'>
+        <h1>${i.name}</h1>
+        <div>${i.marks}</div>
+        <p>${grade}</p>
+      </div>
+        `
+
+        container.innerHTML+=output
+
+
+      }
+    </script>
+  </body>
+</html>
