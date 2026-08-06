@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- loops
+ functions
+ 
+ function sum(a,b)
+ return a+b
+}
+ sum(2+3) // no olp
+ 
+ arrow functions -- it is a more concise way of writing a function in simple syntax
+ 
+ let arrowfun = (a+b)=>{
+ return a+b
+ }
+ console.log(arrowfun(2,3))
+ 
+ we can eliminate rfeturn if there is a singel statement 
+ let arrowfun=(a,b)=> a+b
+ 
+ we can eliminate () if there is a singel parameters
+ let arrowfun = a=> a+a  
+
+        console.log(arrowfun(2))
+
+
+anonymous function
+
+let an=function(){
+console.log('hello world')
+}
+an()       
+
+callback function:--
+it is a function is when a function defination is passed to another function as an arguments and later executes on outer function
+
+autopayment ------ payment -----order
+
+function addtocart(callback){
+console.log('products added to cart')
+callback(order)
+}
+function payment(callback){
+settimeout(()=>{
+console.log('payment completed')
+callback()
+},7000)
+}
+function order(){
+console.log('order placed')
+}
+addtocart(payment)
+
+closures-- is when a inner function having access and can able to change the variable which is declared in outer function even after the execution 
+
+
+function outer(){
+let count = 0
+console.log('outer function is executed')
+return function(){
+count++ 
+console.log(count)
+console.log('inner function is executed')
+
+}
+}
+
+let a=outer()
+a()
+a()
+
+
+ -->
+  <body>
+    <script>
+      function addtocart(callback) {
+        console.log("products added to cart");
+        callback(order);
+      }
+      function payment(callback) {
+        setTimeout(()=>{
+          console.log("payment completed");
+          callback();
+        }, 7000);
+      }
+      function order() {
+        console.log("order placed");
+      }
+      addtocart(payment);
+    </script>
+  </body>
+</html>
