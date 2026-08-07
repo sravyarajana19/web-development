@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" id="registerform">
+        <input type="text" id="inp1">
+        <input type="password" id="inp2">
+        <button type='submit'>submit</button>
+    </form>
+<script>
+
+    /*
+    
+    dom -document object model
+    it is used to update the html strructure,styleing and layout from js
+
+    methods
+   let el=document.getElementById('idname').......<div id='idname'>conte</div> 
+    document.getElementsByTagName('h1').....[h1,h1,h1]
+    document.getElementsByClassName('s1').....[s1,s1,s1]
+
+    properties
+    el.innerText='hello world'
+    el.innerHTML='<h1>hello world</h1>'
+    el.style.color='red'
+    el.style.backgroundImage='url("img.jpg")'
+
+    form handling
+
+    let registerform=document.getElementById('registerform')
+    registerform.onsubmit=function(e){
+        // event-it is used to store the information about a particular foorm
+        e.preventDefault()
+        //it will prevent the autosubmission
+        console.log(e.target[0].value)//firt input
+        console.log(e.target[1].value)//second input
+
+        // 2nd way
+        let inp1=document.getElementById('inp1')
+        let inp2=document.getElementById('inp2')
+        console.log(inp1.value)
+        console.log(inp2.value)
+    }
+
+
+    regex-regular expression
+    it is used to match a speific patterns
+    it is used for validations
+
+
+    text
+    let pattern=/hello/
+   let text='js'
+
+   single occurence
+   let pattern=/[a-z]/
+
+   mutliple
+   let pattern=/[a-z]+/
+   let pattern=/[A-Z]+/
+   let pattern=/[0-9]+/
+   let pattern=/[!@#$%^&*()]+/
+
+
+email
+name
+john   [a-zA-Z0-9_.-]+
+    @
+gmail  [a-z]+
+.     .
+com    [a-z]{2,3}
+
+   alphabets
+
+
+   password
+one uppercase (?=.*[A-Z])
+one lowercase (?=.*[a-z])
+one num  (?=.*[0-9])
+one specail (?=.*[!@#$%^])
+lenght -{8}
+
+    */ 
+   let emailpattern=/[a-zA-Z0-9_.-]+@[a-z]+\.[a-z]{2,3}/
+   let emailtext='john123@gmail.com'
+   console.log(emailtext.match(emailpattern))
+
+   let passwordpattern=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^]){8}/
+   let passwordtext='John@123'
+   console.log(passwordtext.match(passwordpattern))
+</script>
+    
+</body>
+</html>
