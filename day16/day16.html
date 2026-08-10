@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        es=6 featrures
+
+        let const
+       arrow functions
+       destructuring
+       spread operator
+       higher order function
+       local storage 
+
+       variable terms
+
+       variable declaration-rediclaration
+       var a;
+        var a;
+
+       initialization
+       var a=10;
+
+       assignment
+       var a;
+       a=10
+
+
+        hoisting
+        console.log(a)
+        var=10
+
+
+        var
+        var can be redeclared
+        assignment is allowed 
+        hoisting is allowed
+
+
+
+
+        let 
+        let cannot be redeclared
+        assignment is allowed hoisting is not possible because it was in tdz(tempororal dead zone)
+
+
+
+        const
+        const cannot be redclared
+        assignment is not allowed 
+        assignment is allowed hoisting is not possible because it was in tdz(tempororal dead zone)
+
+
+        scopes
+        it is the life or accessiblity of a variable
+
+        global scope
+        we can access variable anywhere
+        var,let,const have global scope
+
+        block scope
+        we can access variables outside of the block
+        let and const have block scope
+
+        local scope
+        we can access variable with in the function only
+        let,var and const have local scope
+
+
+        // const a=10
+        // const a1=20
+        // console.log(a)
+
+        let founder='sairam sir'
+        console.log(founder)
+
+        {
+            var tarine='teja'
+            console.log(founder)
+            console.log(founder)
+        }
+        // console.log(trainer)
+
+        function classroom(){
+            const std='john'
+            console.log(std)
+            console.log(founder)
+        }
+        classroom()
+        // console.leg(std)
+
+
+        localstorage
+
+        //  how to store data in localstorage
+         let name='poorni'
+         localStorage.setItem("pfs3",name)
+
+        //  how to get data from localstorage
+          let data=localStorage.getItem('pfs3')
+          console.log(data)
+
+            let arr=[
+            {name:'poorni',age:20},
+            {name:'hyma',age:23}
+        ]
+        localStorage.setItem('pfs3arr',JSON.stringify(arr))
+
+        let arrdata=JSON.parse(localStorage.getItem('pfs3arr'))
+        console.log(arrdata)
+
+        hof
+        map method
+        map is used to transform an array elements by appling a provided function for every elemen
+
+        
+        let arr = ['html', 'css', 'js']
+        let data = arr.map((val, index, arr)=> {
+        console.log(val)//each value
+        console.log(index)//each index
+        return "frontend - " +val
+        })
+        console.log(data)
+
+
+        filter
+        filter is used to create a filterd array by appyling a boolean function for every element
+
+        let arr=[1,2,3,4,5,6,7,8]
+        let data=arr.filter((val,ind,ar)=>{
+        return val%2==0
+        })
+        console.log(data)
+
+        
+        // reduce is used for calculation -it takes the arry elements 
+        // converts into single value by aplying provided function
+
+        
+
+        */
+       let total=data.reduce((acc,val)=>{
+            return acc+val
+        },0)
+        console.log(total)
+
+
+
+
+    </script>
+  
+    
+</body>
+</html>

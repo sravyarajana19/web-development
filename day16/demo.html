@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+
+        }
+        #container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        #container>div{
+            padding: 20px;
+            box-shadow: 0px 0px 5px 1px;
+        }
+    </style>
+</head>
+<body>
+   <div id="container"></div>
+   <script>
+
+        let data = await fetch (url)
+        let finaldata=await data.json()
+        let container=document.getElementById('container')
+        let output = finaldata.map((val)=>{
+            container.innerHTML+=`
+            <div>
+                <img src=${val.image}>
+                <h3>${val.title}</h3>
+                <p>${val.prince}</p>
+            </div>`
+        })
+        get(data)
+
+
+
+    </script>    
+    
+</body>
+</html>
+
+
+
+<!-- <script>
+     let data=localStorage.getItem('pfs3')
+    console.log(data)
+
+
+     let arrdata=JSON.parse(localStorage.getItem('pfs3arr'))
+        console.log(arrdata)
+   </script> -->
